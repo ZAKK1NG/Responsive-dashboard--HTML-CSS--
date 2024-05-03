@@ -24,7 +24,7 @@ body {
 .sidebar:hover {
     width: 300px;
 }
-
+/*error should've used overflow :hidden ; in the .sidebar  */
 .sidebar:not(:hover)  .desc{
     display: none;
 }
@@ -136,12 +136,14 @@ body {
     background: #7777777d;}
 .cards {
     display: grid;
+    /*you should've used display : flex ; flex-wrap , basis , grow */
     grid-template-columns: repeat(2,  1fr ); 
     grid-template-rows: repeat(2 , 150px);
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 10px;
 }
+/*no use for the media queries in the correct version */
 @media (min-width:1200px) {
     .cards {
         grid-template-columns: repeat(4,1fr);
